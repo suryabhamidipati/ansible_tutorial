@@ -1,0 +1,9 @@
+---
+
+- name: TASK to run the ls command using shell module
+  shell: "ls -lrt /home/oracle/test.out 2>> /dev/null"
+  register: out_put
+
+- name: TASK to print the output
+  debug:
+       var: out_put.stdout_lines
