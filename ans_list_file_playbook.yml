@@ -1,3 +1,4 @@
 --- 
--name: Playbook to run the ls command using shell module
-
+- name: Playbook to run the ls command using shell module
+  hosts: localhost
+  gather_facts: false
